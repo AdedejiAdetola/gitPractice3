@@ -18,4 +18,32 @@
   transform: translateY(-50%);
   right: 50%;
   transform: translateX(50%);
+  animation-name: agreed;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes agreed {
+  0% {
+    width: 100%;
+    background-color: coral;
+  }
+  25% {
+    width: 50%;
+    background-color: antiquewhite;
+  }
+  50% {
+    width: 0%;
+    background-color: magenta;
+  }
+  75% {
+    widht: -50%;
+    background-color: antiquewhite;
+  }
+  100% {
+    width: -100%;
+    background-color: coral;
+  }
 }
